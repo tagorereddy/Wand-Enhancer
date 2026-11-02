@@ -2,15 +2,6 @@ name: Build executable
 
 on:
   workflow_dispatch:
-    inputs:
-      enable_update_notifications:
-        description: Include GitHub release checks when Wand starts
-        type: boolean
-        required: false
-        default: false
-  pull_request:
-  push:
-    branches: [master]
 
 jobs:
   build:
